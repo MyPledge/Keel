@@ -16,10 +16,13 @@ namespace Keel.WPF.Demo
             //app.InitializeComponent();
             //app.Run();
 
-            var builder = KeelWpfApplication.CreateBuilder<App>();
+            var builder = KeelWpfApplication.CreateBuilder<App>(args);
+
+           
 
             var app = builder.Build();
 
+           
             app.Run();
         }
     }

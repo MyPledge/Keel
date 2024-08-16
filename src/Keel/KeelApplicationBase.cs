@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Keel
 {
-    public abstract class KeelApplication : IHost
+    public abstract class KeelApplicationBase : IKeelApplication
     {
         public abstract IServiceProvider Services { get; }
 
