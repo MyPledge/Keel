@@ -16,7 +16,7 @@ namespace Keel.WPF.Demo
             //app.InitializeComponent();
             //app.Run();
 
-            var builder = KeelWpfApplication.CreateBuilder<App>(args);
+            var builder = Application.CreateBuilder<App>(args);
 
            
 

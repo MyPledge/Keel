@@ -1,9 +1,10 @@
-﻿<Application x:Class="Keel.WPF.Demo.App"
+﻿<keel:AppBase x:Class="Keel.WPF.Demo.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Keel.WPF.Demo"
+             xmlns:keel="clr-namespace:Keel.WPF;assembly=Keel.WPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
     </Application.Resources>
-</Application>
+</keel:AppBase>

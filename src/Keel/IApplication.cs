@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Keel
 {
-    interface IKeepApplicationBuilder : IHostApplicationBuilder
-    {
+    interface IApplication : IHost
+    { 
     }
 }

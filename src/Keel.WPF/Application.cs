@@ -7,7 +7,7 @@ using System.Windows;
 
 namespace Keel.WPF
 {
-    public sealed class KeelWpfApplication : KeelApplicationBase
+    public sealed class Application : ApplicationBase
     {
         public override IServiceProvider Services => throw new NotImplementedException();
 
@@ -27,13 +27,13 @@ namespace Keel.WPF
             throw new NotImplementedException();
         }
 
-        public static KeelWpfApplicationBuilder CreateBuilder<T>(string[] args)
-            where T : Application
+        public static ApplicationBuilder CreateBuilder<T>(string[] args)
+            where T : System.Windows.Application
         {
             return new(typeof(T), args);
         }
 
-        public static KeelWpfApplicationBuilder CreateBuilder(Type appType, string[] args)
+        public static ApplicationBuilder CreateBuilder(Type appType, string[] args)
         {
             return new(appType, args);
         }

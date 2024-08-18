@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Keel.WPF
 {
-    internal class KeelWpfApplicationBuilderOptions : KeelApplicationBuilderOptionsBase
+    public interface IApp
     {
-        public required Type AppType { get; init; }
     }
 }

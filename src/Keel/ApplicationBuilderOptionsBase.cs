@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Keel
 {
-    public abstract class KeelApplicationBuilderOptionsBase : IKeelApplicationBuilderOptionsBase
+    public abstract class ApplicationBuilderOptionsBase : IApplicationBuilderOptionsBase
     {
         public required string[] Args { get; init; }
     }

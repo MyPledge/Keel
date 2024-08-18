@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Keel
 {
-    public abstract class KeelApplicationBuilderBase : IKeepApplicationBuilder
+    public abstract class ApplicationBuilderBase : IApplicationBuilder
     {
         private readonly HostApplicationBuilder _applicationBuilder;
 
@@ -27,7 +27,7 @@ namespace Keel
 
         public IServiceCollection Services => throw new NotImplementedException();
 
-        public KeelApplicationBuilderBase(KeelApplicationBuilderOptionsBase options)
+        public ApplicationBuilderBase(ApplicationBuilderOptionsBase options)
         {
             _applicationBuilder = new(new HostApplicationBuilderSettings()
             {

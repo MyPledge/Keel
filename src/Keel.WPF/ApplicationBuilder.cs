@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 
 namespace Keel.WPF
 {
-    public sealed class KeelWpfApplicationBuilder : KeelApplicationBuilderBase
+    public sealed class ApplicationBuilder : ApplicationBuilderBase
     {
         public override IDictionary<object, object> Properties => throw new NotImplementedException();
 
         
 
-        internal KeelWpfApplicationBuilder(Type appType, string[] args) 
-            : base(new KeelWpfApplicationBuilderOptions() 
+        internal ApplicationBuilder(Type appType, string[] args) 
+            : base(new ApplicationBuilderOptions() 
             { 
                 AppType = appType,
                 Args = args,
@@ -25,7 +25,7 @@ namespace Keel.WPF
             
         }
 
-        public override KeelWpfApplication Build()
+        public override Application Build()
         {
             return default;
         }
